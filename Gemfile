@@ -69,4 +69,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  # Provides RSpec-compatible one-liners to test [https://github.com/thoughtbot/shoulda-matchers]
+  gem 'shoulda-matchers', '~> 5.3'
 end
