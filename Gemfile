@@ -71,4 +71,8 @@ group :test do
   gem "webdrivers"
   #Brings the RSpec testing framework to Ruby on Rails [https://github.com/rspec/rspec-rails/tree/6-0-maintenance]
   gem 'rspec-rails', '~> 6.0.0'
+  #Set of gems containing strategies for cleaning your database in Ruby [https://github.com/DatabaseCleaner/database_cleaner]
+  gem 'database_cleaner-active_record'
+  #Clean your Redis databases with Database Cleaner. [https://github.com/DatabaseCleaner/database_cleaner-redis]
+  gem 'database_cleaner-redis'
 end
