@@ -35,6 +35,9 @@ gem 'redis', '~> 4.0'
 # Gem for background processing [https://github.com/sidekiq/sidekiq]
 gem 'sidekiq', '~>6.0.0'
 
+# Gem devise for authentication [https://github.com/heartcombo/devise]
+gem 'devise'
+
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
