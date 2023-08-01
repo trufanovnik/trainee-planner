@@ -69,4 +69,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  #Brings the RSpec testing framework to Ruby on Rails [https://github.com/rspec/rspec-rails/tree/6-0-maintenance]
+  gem 'rspec-rails', '~> 6.0.0'
 end
