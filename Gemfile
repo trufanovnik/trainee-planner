@@ -83,6 +83,9 @@ group :development, :test do
   
   # Shim to load environment variables from .env into ENV in development [https://www.rubydoc.info/gems/dotenv-rails/2.1.1]
   gem 'dotenv-rails'
+
+  #RSpec testing for Ruby on Rails [https://github.com/rspec/rspec-rails/tree/6-0-maintenance]
+  gem 'rspec-rails'
 end
 
 group :development do
@@ -99,8 +102,12 @@ group :development do
 end
 
 group :test do
-  # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
+  # Simulating how a real user would interact with app [https://github.com/teamcapybara/capybara]
   gem 'capybara'
+
+  # Implements the W3C WebDriver protocol [https://rubygems.org/gems/selenium-webdriver/versions/4.4.0]
   gem 'selenium-webdriver'
+
+  # Run Selenium tests and updates webdrivers [https://rubygems.org/gems/webdrivers/versions/3.2.0]
   gem 'webdrivers'
 end
