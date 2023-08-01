@@ -84,7 +84,7 @@ group :development, :test do
   # Shim to load environment variables from .env into ENV in development [https://www.rubydoc.info/gems/dotenv-rails/2.1.1]
   gem 'dotenv-rails'
 
-  #RSpec testing for Ruby on Rails [https://github.com/rspec/rspec-rails/tree/6-0-maintenance]
+  # RSpec testing for Ruby on Rails [https://github.com/rspec/rspec-rails/tree/6-0-maintenance]
   gem 'rspec-rails'
 end
 
@@ -110,4 +110,8 @@ group :test do
 
   # Run Selenium tests and updates webdrivers [https://rubygems.org/gems/webdrivers/versions/3.2.0]
   gem 'webdrivers'
+  # Set of gems containing strategies for cleaning your database in Ruby [https://github.com/DatabaseCleaner/database_cleaner]
+  gem 'database_cleaner-active_record'
+  # Clean your Redis databases with Database Cleaner. [https://github.com/DatabaseCleaner/database_cleaner-redis]
+  gem 'database_cleaner-redis'
 end
