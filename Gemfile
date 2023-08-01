@@ -60,6 +60,15 @@ group :development, :test do
   gem 'active_storage_validations'
   # fixtures replacement with a straightforward definition syntax [https://github.com/thoughtbot/factory_bot_rails]
   gem 'factory_bot_rails'
+
+  #Static code analyzer [https://github.com/rubocop/rubocop]
+  gem 'rubocop', '~> 1.54', require: false
+
+  #Rubocop for rails [https://github.com/rubocop/rubocop-rails]
+  gem 'rubocop-rails', require: false
+  
+  #Rubocop for RSpec [https://github.com/rubocop/rubocop-rspec]
+  gem 'rubocop-rspec', require: false
 end
 
 group :development do
