@@ -53,6 +53,8 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   # For generating fake data [https://github.com/faker-ruby/faker]
   gem 'faker'
+  # Gem to write a custom validation method [https://github.com/igorkasyanchuk/active_storage_validations]
+  gem 'active_storage_validations'
 end
 
 group :development do
