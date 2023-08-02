@@ -71,4 +71,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  # This gem brings back assigns to your controller tests [https://github.com/rails/rails-controller-testing]
+  gem 'rails-controller-testing'
 end
