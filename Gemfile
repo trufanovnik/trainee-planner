@@ -55,6 +55,8 @@ group :development, :test do
   gem 'faker'
   # Gem to write a custom validation method [https://github.com/igorkasyanchuk/active_storage_validations]
   gem 'active_storage_validations'
+  # fixtures replacement with a straightforward definition syntax [https://github.com/thoughtbot/factory_bot_rails]
+  gem 'factory_bot_rails'
 end
 
 group :development do
