@@ -38,7 +38,7 @@ gem 'sidekiq', '~>6.0.0'
 # Gem devise for authentication [https://github.com/heartcombo/devise]
 gem 'devise'
 
-#Centralization of locale data collection for Ruby on Rails.
+# Centralization of locale data collection for Ruby on Rails.
 gem 'rails-i18n', '~> 7.0.0'
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
@@ -61,8 +61,8 @@ gem 'image_processing', '~> 1.2'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem "debug", platforms: %i[ mri mingw x64_mingw ]
-  
+  gem 'debug', platforms: %i[mri mingw x64_mingw]
+
   # For generating fake data [https://github.com/faker-ruby/faker]
   gem 'faker'
 
@@ -71,9 +71,6 @@ group :development, :test do
 
   # fixtures replacement with a straightforward definition syntax [https://github.com/thoughtbot/factory_bot_rails]
   gem 'factory_bot_rails'
-
-  # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem 'debug', platforms: %i[mri mingw x64_mingw]
 
   # Static code analyzer [https://github.com/rubocop/rubocop]
   gem 'rubocop', '~> 1.54', require: false
