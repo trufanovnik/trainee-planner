@@ -77,4 +77,6 @@ group :test do
   gem 'database_cleaner-redis'
   # Provides RSpec-compatible one-liners to test [https://github.com/thoughtbot/shoulda-matchers]
   gem 'shoulda-matchers', '~> 5.3'
+  # Code coverage analysis tool for Ruby [https://github.com/simplecov-ruby/simplecov]
+  gem 'simplecov', '~> 0.22.0'
 end
