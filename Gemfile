@@ -80,6 +80,9 @@ group :development, :test do
 
   # Rubocop for RSpec [https://github.com/rubocop/rubocop-rspec]
   gem 'rubocop-rspec', require: false
+  
+  # Shim to load environment variables from .env into ENV in development [https://www.rubydoc.info/gems/dotenv-rails/2.1.1]
+  gem 'dotenv-rails'
 end
 
 group :development do
