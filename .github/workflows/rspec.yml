@@ -1,0 +1,27 @@
+name: Rspec
+on: [push]
+jobs:
+  Rspec:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    # Use the action we created in action.yml file to install dependencies.
+    - uses: ./.github/actions/setup-rails-app
+    # Run rspec tests
+    - name: Run Rspec
+      run: bundle exec rspec
+  Simplecov:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    # Use the action we created in action.yml file to install dependencies.
+    - uses: ./.github/actions/setup-rails-app
+    # Run rspec tests
+    - name: Run Rspec
+      run: bundle exec rspec --format SimpleCov
+
+    - name: Coverage Report
+      uses: actions/upload-artifact@v2
+      with:
+        name: coverage
+        path: coverage

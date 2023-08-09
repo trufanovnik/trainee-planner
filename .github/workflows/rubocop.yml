@@ -1,0 +1,12 @@
+name: Rubocop
+on: [push]
+jobs:
+  rubocop:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    # Use the action we created in action.yml file to install dependencies.
+    - uses: ./.github/actions/setup-rails-app 
+    # Run rubocop check for Rails app.
+    - name: Run rubocop 
+      run: bundle exec rubocop

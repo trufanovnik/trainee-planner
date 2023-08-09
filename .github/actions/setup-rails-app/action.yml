@@ -1,0 +1,19 @@
+name: 'Setup Rails App'
+description: 'Install dependencies, gems and yarn packages for Rails app'
+runs:
+  using: 'composite'
+
+  steps:
+  - uses: actions/checkout@v2
+
+  - uses: ruby/setup-ruby@v1
+    with:
+      ruby-version: 3.1.4
+      bundler-cache: true
+
+  - name: Install dependencies
+    run: sudo apt-get install -yqq libpq-dev
+    shell: bash
+  - name: Install gems
+    run: bundle install
+    shell: bash
