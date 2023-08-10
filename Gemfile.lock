@@ -92,6 +92,8 @@ GEM
     concurrent-ruby (1.2.2)
     connection_pool (2.4.1)
     crass (1.0.6)
+    cssbundling-rails (1.2.0)
+      railties (>= 6.0.0)
     database_cleaner-active_record (2.1.0)
       activerecord (>= 5.a)
       database_cleaner-core (~> 2.0.0)
@@ -99,8 +101,6 @@ GEM
     database_cleaner-redis (2.0.0)
       database_cleaner-core (~> 2.0.0)
       redis
-    cssbundling-rails (1.2.0)
-      railties (>= 6.0.0)
     date (3.3.3)
     debug (1.8.0)
       irb (>= 1.5.0)
@@ -142,10 +142,10 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
-    json (2.6.3)
-    language_server-protocol (3.17.0.3)
     jsbundling-rails (1.1.2)
       railties (>= 6.0.0)
+    json (2.6.3)
+    language_server-protocol (3.17.0.3)
     loofah (2.21.3)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -342,9 +342,9 @@ DEPENDENCIES
   active_storage_validations
   bootsnap
   capybara
+  cssbundling-rails
   database_cleaner-active_record
   database_cleaner-redis
-  cssbundling-rails (~> 1.2)
   debug
   devise
   dotenv-rails
@@ -353,7 +353,7 @@ DEPENDENCIES
   image_processing (~> 1.2)
   importmap-rails
   jbuilder
-  jsbundling-rails (~> 1.1)
+  jsbundling-rails
   pg (~> 1.1)
   pry (~> 0.13.1)
   puma (~> 5.0)
