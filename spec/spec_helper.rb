@@ -17,22 +17,4 @@ RSpec.configure do |config|
 
   # Customizing the behavior of shared contexts depending on the metadata of the example groups
   config.shared_context_metadata_behavior = :apply_to_host_groups
-
-  # Setting the cleanup strategy for ActiveRecord
-  config.before(:suite) do
-    DatabaseCleaner[:active_record].strategy = :transaction
-    DatabaseCleaner[:active_record].clean_with(:truncation)
-  end
-
-  # Setting a cleanup strategy for Redis
-  config.before(:suite) do
-    DatabaseCleaner[:redis].strategy = :truncation
-  end
-  
-  # Run cleaning before and after each test
-  config.around(:each) do |example|
-    DatabaseCleaner.cleaning do
-      example.run
-    end
-  end
 end
