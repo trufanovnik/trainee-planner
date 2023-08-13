@@ -15,7 +15,7 @@ Rspec.configure do |config|
   end
 
   # Run cleaning before and after each test
-  config.around(:each) do |example|
+  config.around do |example|
     DatabaseCleaner.cleaning do
       example.run
     end

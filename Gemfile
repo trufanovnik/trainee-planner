@@ -57,10 +57,10 @@ gem 'bootsnap', require: false
 # gem "sassc-rails"
 
 # Bundle and process CSS with Bootstrap [https://rubygems.org/gems/cssbundling-rails/versions/1.2.0]
-gem "cssbundling-rails"
+gem 'cssbundling-rails'
 
 # Transpile JavaScript in Rails with esbuild, rollup.js, or Webpack [https://rubygems.org/gems/jsbundling-rails/versions/1.0.2]
-gem "jsbundling-rails"
+gem 'jsbundling-rails'
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem 'image_processing', '~> 1.2'
@@ -86,7 +86,7 @@ group :development, :test do
 
   # Rubocop for RSpec [https://github.com/rubocop/rubocop-rspec]
   gem 'rubocop-rspec', require: false
-  
+
   # Shim to load environment variables from .env into ENV in development [https://www.rubydoc.info/gems/dotenv-rails/2.1.1]
   gem 'dotenv-rails'
 
