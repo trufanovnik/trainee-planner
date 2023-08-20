@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
-require 'database_cleaner'
+require 'database_cleaner-active_record'
+require 'database_cleaner-redis'
 
-Rspec.configure do |config|
+RSpec.configure do |config|
   # Setting the cleanup strategy for ActiveRecord
   config.before(:suite) do
     DatabaseCleaner[:active_record].strategy = :transaction
@@ -11,7 +12,7 @@ Rspec.configure do |config|
 
   # Setting a cleanup strategy for Redis
   config.before(:suite) do
-    DatabaseCleaner[:redis].strategy = :truncation
+    DatabaseCleaner[:redis].strategy = :deletion
   end
 
   # Run cleaning before and after each test
